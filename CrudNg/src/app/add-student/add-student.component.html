@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="my-3 text-center p-2 container" style="width: 50%">
+    <p class="m-3 p-2 bg-secondary text-light border-rad">Add Student</p>
+  </div>
+
+  <div class="container">
+    <form [formGroup]="addStudent" novalidate class="form">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        name="firstName"
+        id=""
+        class="form-control"
+        formControlName="firstName"
+      /><br />
+
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        name="lastName"
+        id=""
+        class="form-control"
+        formControlName="lastName"
+      /><br />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id=""
+        class="form-control"
+        formControlName="email"
+      /><br />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id=""
+        class="form-control"
+        formControlName="password"
+      /><br />
+
+      <div class="container-fluid text-center">
+        <button type="submit" class="btn btn-success" (click)="onSubmit()">
+          Add student
+        </button>
+      </div>
+      <br />
+    </form>
+  </div>
+</div>
